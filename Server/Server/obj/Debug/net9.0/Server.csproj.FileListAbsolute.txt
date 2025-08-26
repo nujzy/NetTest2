@@ -1,0 +1,15 @@
+J:\Unity\Learn\1234\NetTest2\Server\Server\bin\Debug\net9.0\Server.exe
+J:\Unity\Learn\1234\NetTest2\Server\Server\bin\Debug\net9.0\Server.deps.json
+J:\Unity\Learn\1234\NetTest2\Server\Server\bin\Debug\net9.0\Server.runtimeconfig.json
+J:\Unity\Learn\1234\NetTest2\Server\Server\bin\Debug\net9.0\Server.dll
+J:\Unity\Learn\1234\NetTest2\Server\Server\bin\Debug\net9.0\Server.pdb
+J:\Unity\Learn\1234\NetTest2\Server\Server\obj\Debug\net9.0\Server.GeneratedMSBuildEditorConfig.editorconfig
+J:\Unity\Learn\1234\NetTest2\Server\Server\obj\Debug\net9.0\Server.AssemblyInfoInputs.cache
+J:\Unity\Learn\1234\NetTest2\Server\Server\obj\Debug\net9.0\Server.AssemblyInfo.cs
+J:\Unity\Learn\1234\NetTest2\Server\Server\obj\Debug\net9.0\Server.csproj.CoreCompileInputs.cache
+J:\Unity\Learn\1234\NetTest2\Server\Server\obj\Debug\net9.0\Server.sourcelink.json
+J:\Unity\Learn\1234\NetTest2\Server\Server\obj\Debug\net9.0\Server.dll
+J:\Unity\Learn\1234\NetTest2\Server\Server\obj\Debug\net9.0\refint\Server.dll
+J:\Unity\Learn\1234\NetTest2\Server\Server\obj\Debug\net9.0\Server.pdb
+J:\Unity\Learn\1234\NetTest2\Server\Server\obj\Debug\net9.0\Server.genruntimeconfig.cache
+J:\Unity\Learn\1234\NetTest2\Server\Server\obj\Debug\net9.0\ref\Server.dll

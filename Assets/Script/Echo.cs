@@ -38,10 +38,27 @@ public class Echo : MonoBehaviour
             Socket socket = (Socket)ar.AsyncState;
             socket.EndConnect(ar);
             Debug.Log("Connect Success");
+            socket.BeginReceive(readBuff,0,1024,0,ReceiveCallBack, socket);
         }
         catch (SocketException e)
         {
-            Debug.Log("Socket Connect Fail" + e);
+            Debug.Log("Socket Connect Fail:" + e);
+        }
+    }
+
+    private void ReceiveCallBack(IAsyncResult ar)
+    {
+        try
+        {
+            Socket socket = (Socket)ar.AsyncState;
+            socket.EndReceive(ar);
+            recvStr = System.Text.Encoding.Default.GetString(readBuff);
+            socket.BeginReceive(readBuff, 0, 1024, 0, ReceiveCallBack, socket);
+        }
+        catch (SocketException e)
+        {
+            Console.WriteLine(e);
+            throw;
         }
     }
 
@@ -50,12 +67,10 @@ public class Echo : MonoBehaviour
         string sendStr = inputField.text;
         byte[] sendBytes = System.Text.Encoding.Default.GetBytes(sendStr);
         socket.Send(sendBytes);
-        
-        byte[] readBuff = new byte[1024];
-        int count = socket.Receive(readBuff);
-        string recvStr = System.Text.Encoding.Default.GetString(readBuff, 0, count);
-        text.text = recvStr;
-        socket.Close();
     }
 
+    private void Update()
+    {
+        text.text = recvStr;
+    }
 }
